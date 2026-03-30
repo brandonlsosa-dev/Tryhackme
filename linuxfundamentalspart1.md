@@ -33,15 +33,9 @@ This is my first linux course!
 
 > I've deployed my first Linux machine!
 
-```
-```
-
 ### 📸 Screenshot
 
-```
-<img width="1230" height="1277" alt="image" src="https://github.com/user-attachments/assets/b979d630-3ab4-4004-b96f-b60a5c47ca89" />
-
-```
+<img width="1230" height="1277" alt="image" src="https://github.com/user-attachments/assets/5f13e98f-1463-4363-afb2-ff54ea70af59" />
 
 ### Key Concepts
 
@@ -66,9 +60,7 @@ tryhackme
 
 ### 📸 Screenshot
 
-```md
-
-```
+<img width="1123" height="1277" alt="image" src="https://github.com/user-attachments/assets/e68110aa-a9c1-4834-8bab-5a5ec84587bb" />
 
 ### Commands Used
 
@@ -112,9 +104,7 @@ Hello World
 
 ### 📸 Screenshot
 
-```md
-![Task 5 Screenshot](./images/task5.png)
-```
+<img width="1119" height="1273" alt="image" src="https://github.com/user-attachments/assets/3918644c-c124-4693-869e-10195119bed4" />
 
 ### Commands Used
 
@@ -136,14 +126,12 @@ pwd
 > Use grep on “access.log” to find the flag that has a prefix of “THM”. What is the flag?
 
 ```
-[fill this in]
+THM{ACCESS}
 ```
 
 ### 📸 Screenshot
 
-```md
-![Task 6 Screenshot](./images/task6.png)
-```
+<img width="1122" height="1275" alt="image" src="https://github.com/user-attachments/assets/dc008449-5290-41fa-8161-86ff315d02cf" />
 
 ### Commands Used
 
@@ -179,9 +167,7 @@ echo tryhackme >> passwords
 
 ### 📸 Screenshot
 
-```md
-![Task 7 Screenshot](./images/task7.png)
-```
+<img width="1116" height="1275" alt="image" src="https://github.com/user-attachments/assets/a4fef94f-e65a-4829-9946-774fa7cf9c73" />
 
 ### Commands Used
 
