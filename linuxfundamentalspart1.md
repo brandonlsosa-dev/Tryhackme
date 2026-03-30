@@ -38,8 +38,9 @@ This is my first linux course!
 
 ### 📸 Screenshot
 
-```md
-<img width="1230" height="1277" alt="Image" src="https://github.com/user-attachments/assets/067c6f82-d461-4cdc-9c47-ac914104ee9e" />
+```
+<img width="1230" height="1277" alt="image" src="https://github.com/user-attachments/assets/b979d630-3ab4-4004-b96f-b60a5c47ca89" />
+
 ```
 
 ### Key Concepts
