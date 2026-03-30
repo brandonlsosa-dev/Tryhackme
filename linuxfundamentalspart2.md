@@ -1,4 +1,4 @@
-# linuxfundamentalspart1
+# linuxfundamentalspart2
 
 > Easy | Linux Fundamentals | Date Completed:
 
@@ -13,180 +13,214 @@
 
 ---
 
-## Task 2 - A Bit of Background on Linux
+## Task 2 - Accessing Your Linux Machine Using SSH (Deploy)
 
-> Research: What year was the first release of a Linux operating system?
-
-```
-1991
-```
-
-### Key Concepts
-
-* Linux is an open-source operating system created by Linus Torvalds
-* Widely used in servers, cybersecurity, and cloud environments
-
----
-
-## Task 3 - Interacting With Your First Linux Machine (In-Browser)
-
-> I've deployed my first Linux machine!
+> I've successfully connected to the deployed machine using SSH!
 
 ```
 ```
 
-### Key Concepts
-
-* Linux is primarily interacted with through the terminal (CLI)
-* TryHackMe provides a browser-based VM
-
----
-
-## Task 4 - Running Your First Few Commands
-
-> If we wanted to output the text "TryHackMe", what would our command be?
-
-```
-echo TryHackMe
-```
-
-> What is the username of who you're logged in as on your deployed Linux machine?
-
-```
-tryhackme
-```
-
-### 📸 Screenshot (Command Execution Proof)
+### 📸 Screenshot (SSH Connection Proof - Important)
 
 ```md
-![Command Output](./images/task4-command-output.png)
+![SSH Connection](./images/task2-ssh.png)
 ```
 
 ### Commands Used
 
 ```bash
-echo TryHackMe
-whoami
+ssh tryhackme@<IP>
 ```
 
 ### Key Concepts
 
-* `echo` outputs text
-* `whoami` identifies current user
+* SSH allows secure remote access to machines
+* Used heavily in cybersecurity for remote system interaction ([Medium][1])
 
 ---
 
-## Task 5 - Interacting With the Filesystem!
+## Task 3 - Introduction to Flags and Switches
 
-> On the Linux machine that you deploy, how many folders are there?
-
-```
-4
-```
-
-> Which directory contains a file?
+> Explore the manual page of the ls command
 
 ```
-folder4
+Done
 ```
 
-> What is the contents of this file?
+> What flag would we use to display the output in a "human-readable" way?
 
 ```
-Hello World
+-h
 ```
 
-> Use the cd command to navigate to this file and find out the new current working directory. What is the path?
+### Commands Used
+
+```bash
+man ls
+ls -h
+ls --help
+```
+
+### Key Concepts
+
+* Flags modify command behavior
+* `man` pages are critical for learning commands ([Medium][2])
+
+---
+
+## Task 4 - Filesystem Interaction Continued
+
+> How would you create the file named “newnote”?
 
 ```
-/home/tryhackme/folder4
+touch newnote
 ```
 
-### 📸 Screenshot (Filesystem Navigation Proof)
+> On the deployable machine, what is the file type of “unknown1”?
+
+```
+ASCII text
+```
+
+> How would we move the file “myfile” to the directory “myfolder”?
+
+```
+mv myfile myfolder
+```
+
+> What are the contents of this file?
+
+```
+THM{FILESYSTEM}
+```
+
+> Continue to apply your knowledge and practice the commands
+
+```
+Done
+```
+
+### 📸 Screenshot (Filesystem Command Proof)
 
 ```md
-![Filesystem Navigation](./images/task5-filesystem.png)
+![Filesystem Commands](./images/task4-filesystem.png)
 ```
 
 ### Commands Used
 
 ```bash
-ls
-cd
-cat
-pwd
+touch newnote
+file unknown1
+mv myfile myfolder
+cat file
 ```
 
 ### Key Concepts
 
-* File navigation is foundational in Linux
+* File manipulation is core to Linux operations
+* Commands like `mv`, `cp`, `rm`, `file` are used daily in IT/security ([Medium][2])
 
 ---
 
-## Task 6 - Searching for Files
+## Task 5 - Permissions 101
 
-> Use grep on “access.log” to find the flag that has a prefix of “THM”. What is the flag?
+> On the deployable machine, who is the owner of “important”?
 
 ```
-[fill this in]
+user2
 ```
 
-### 📸 Screenshot (Log Analysis Proof - Important)
+> What would the command be to switch to the user “user2”?
+
+```
+su user2
+```
+
+> Switch to this user
+
+```
+Done
+```
+
+### 📸 Screenshot (User Switching Proof)
 
 ```md
-![Grep Flag Output](./images/task6-grep-flag.png)
+![User Switch](./images/task5-user-switch.png)
 ```
 
 ### Commands Used
 
 ```bash
-grep "THM" access.log
+ls -lh
+su user2
 ```
 
 ### Key Concepts
 
-* `grep` is critical for log analysis (SOC-level skill)
+* Permissions control access (read, write, execute)
+* User switching is important for privilege escalation concepts ([Medium][2])
 
 ---
 
-## Task 7 - An Introduction to Shell Operators
+## Task 6 - Common Directories
 
-> If we wanted to run a command in the background, what operator would we want to use?
-
-```
-&
-```
-
-> If I wanted to replace the contents of a file named “passwords” with the word “password123”, what would my command be?
+> What is the directory path where logs are stored?
 
 ```
-echo password123 > passwords
+/var/log
 ```
 
-> Now if I wanted to add “tryhackme” to this file named “passwords” but also keep “password123”, what would my command be?
+> What directory is similar to RAM (temporary storage)?
 
 ```
-echo tryhackme >> passwords
+/tmp
+```
+
+> What is the home directory of the root user?
+
+```
+/root
+```
+
+> Apply your knowledge and navigate through directories
+
+```
+Done
 ```
 
 ### Commands Used
 
 ```bash
-&
->
->>
+cd /
+cd ~
+ls /var/log
 ```
 
 ### Key Concepts
 
-* `>` overwrite vs `>>` append
-* `&` runs processes in background
+* `/var/log` → system logs (important for SOC analysis)
+* `/tmp` → temporary storage (clears on reboot)
+* `/root` → root user home directory ([Electronics Reference][3])
 
 ---
 
-## Task 8 - Conclusions & Summaries
+## Task 7 - Conclusions & Summaries
 
-> Proceed to the next room
+> Proceed to the next task
+
+```
+```
+
+---
+
+## Task 8 - Linux Fundamentals Part 3
+
+> Terminate the machine
+
+```
+```
+
+> Continue to Part 3
 
 ```
 ```
@@ -195,27 +229,33 @@ echo tryhackme >> passwords
 
 ## Key Takeaways
 
-* Linux CLI is essential for cybersecurity roles
-* Core commands: `ls`, `cd`, `cat`, `pwd`, `grep`
-* Log searching (`grep`) is directly applicable to SOC work
-* Shell operators control command behavior
+* SSH is critical for remote system access
+* Flags (`-h`, `--help`) enhance command functionality
+* File manipulation commands are foundational
+* Linux permissions are key for security concepts
+* Understanding directories is essential for log analysis
 
 ---
 
 ## Skills Demonstrated
 
-* Linux command-line usage
-* File system navigation
-* Basic log analysis
-* Command execution
+* Remote access via SSH
+* Advanced command usage (flags & switches)
+* File system manipulation
+* Linux permissions & user management
+* Directory navigation & system understanding
 
 ---
 
 ## Tools Used
 
-* Linux Terminal
+* SSH
 * Bash
-* grep
+* Linux Terminal
 * coreutils
 
 ---
+
+[1]: https://iritt.medium.com/linux-fundamentals-part-2-jcyber-security-101-linux-fundamentals-tryhackme-walkthrough-d85f1700b5bf?utm_source=chatgpt.com "Linux Fundamentals Part 2 — Cyber Security 101 - IritT"
+[2]: https://medium.com/%40meghraj312002/tryhackme-linux-fundamentals-part-2-walkthrough-d2a55daca7ba?utm_source=chatgpt.com "TryHackMe — Linux Fundamentals Part 2 — Walkthrough"
+[3]: https://electronicsreference.com/thm/linux_fundamentals_pt2/?utm_source=chatgpt.com "Linux Fundamentals Part 2 - Complete Walkthrough"
