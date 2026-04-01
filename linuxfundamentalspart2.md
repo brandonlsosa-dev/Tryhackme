@@ -1,6 +1,6 @@
 # linuxfundamentalspart2
 
-> Easy | Linux Fundamentals | Date Completed:
+> Easy | Linux Fundamentals | Date Completed: 4/1/2026
 
 ---
 
