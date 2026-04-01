@@ -138,17 +138,21 @@ user2
 su user2
 ```
 
-> Switch to this user
+> Now switch to this user "user2" using the password "user2"
 
 ```
 Done
 ```
 
+> Output the contents of "important", what is the flag?
+
+```
+THM{SU_USER2}
+```
+
 ### 📸 Screenshot (User Switching Proof)
 
-```md
-![User Switch](./images/task5-user-switch.png)
-```
+<img width="955" height="913" alt="image" src="https://github.com/user-attachments/assets/167d5202-ae4a-4696-88fa-84eabc08c24b" />
 
 ### Commands Used
 
@@ -159,7 +163,7 @@ su user2
 
 ### Key Concepts
 
-* Permissions control access (read, write, execute)
+* Permissions control access (read(4), write(2), execute(1))
 * User switching is important for privilege escalation concepts ([Medium][2])
 
 ---
