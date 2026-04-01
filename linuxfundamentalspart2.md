@@ -22,14 +22,12 @@
 
 ### 📸 Screenshot (SSH Connection Proof - Important)
 
-```md
-![SSH Connection](./images/task2-ssh.png)
-```
+<img width="954" height="921" alt="Screenshot 2026-04-01 122410" src="https://github.com/user-attachments/assets/65ff5d2e-53ab-4b7b-8cf1-897bcbb07115" />
 
 ### Commands Used
 
 ```bash
-ssh tryhackme@<IP>
+ssh tryhackme@10.66.140.189
 ```
 
 ### Key Concepts
@@ -45,6 +43,12 @@ ssh tryhackme@<IP>
 
 ```
 Done
+```
+
+> What directional arrow key would we use to navigate down the manual page?
+
+```
+down
 ```
 
 > What flag would we use to display the output in a "human-readable" way?
@@ -102,9 +106,7 @@ Done
 
 ### 📸 Screenshot (Filesystem Command Proof)
 
-```md
-![Filesystem Commands](./images/task4-filesystem.png)
-```
+<img width="959" height="917" alt="Screenshot 2026-04-01 130839" src="https://github.com/user-attachments/assets/25d3969f-0d3f-4864-b9bc-8321dd0ed8c7" />
 
 ### Commands Used
 
