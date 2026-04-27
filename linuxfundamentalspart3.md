@@ -22,9 +22,7 @@
 
 ### 📸 Screenshot (SSH Connection Proof - Important)
 
-```md
-![SSH Connection](./images/task2-ssh.png)
-```
+<img width="955" height="919" alt="image" src="https://github.com/user-attachments/assets/5d23b57d-0459-4d4e-a296-f54ea350839e" />
 
 ### Commands Used
 
@@ -55,14 +53,12 @@ THM{TEXT_EDITORS}
 
 ### 📸 Screenshot (Nano Editing Proof)
 
-```md
-![Nano Editor](./images/task3-nano.png)
-```
+<img width="955" height="922" alt="image" src="https://github.com/user-attachments/assets/8dc1cdbe-666a-41d1-a80b-11a86be8655d" />
 
 ### Commands Used
 
 ```bash
-nano filename
+nano task3
 ```
 
 ### Key Concepts
@@ -100,9 +96,7 @@ Done
 
 ### 📸 Screenshot (Web Server + Wget Proof)
 
-```md
-![HTTP Server & Wget](./images/task4-webserver.png)
-```
+<img width="956" height="921" alt="image" src="https://github.com/user-attachments/assets/1da72cf4-2eee-43fa-88ee-999d222677b5" />
 
 ### Commands Used
 
@@ -159,9 +153,7 @@ fg
 
 ### 📸 Screenshot (Process + Service Management Proof)
 
-```md
-![Processes](./images/task5-processes.png)
-```
+<img width="953" height="917" alt="image" src="https://github.com/user-attachments/assets/2d23f11c-c5c2-43d8-a96c-dac9a11fec09" />
 
 ### Commands Used
 
@@ -236,9 +228,7 @@ catsanddogs.jpg
 
 ### 📸 Screenshot (Log Analysis Proof - Important)
 
-```md
-![Log Analysis](./images/task8-logs.png)
-```
+<img width="955" height="918" alt="image" src="https://github.com/user-attachments/assets/780a09b6-4b70-42bf-97f8-9df2db5ad0ac" />
 
 ### Commands Used
 
